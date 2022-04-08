@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- ICS2O-UNIT-3-02-HTML -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Converting temperture" />
+    <meta name="keywords" content="mths, ics2o" />
+    <meta name="author" content="Titus diceman" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.deep_purple-indigo.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>fahrenheit to celsius</title>
+  </head>
+  <body>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <h1><b>fahrenheit to celsius</b></h1>
+        <!-- Numeric Textfield with Floating Label -->
+    <form action="#">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="Fahrenheit">
+        <label class="mdl-textfield__label" for="sample4"><b>Fahrenheit</b></label>
+        <span class="mdl-textfield__error"><b>Must be a number</b></span>
+      </div>
+    </form>
+        <!-- Accent-colored raised button with ripple -->
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="calculate()">
+      calculate
+    </button>
+    <div id="volume"></div>
+  </body>
+</html>
